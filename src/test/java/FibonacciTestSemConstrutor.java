@@ -1,14 +1,15 @@
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameter;
 
 import java.util.Arrays;
 import java.util.Collection;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class FibonacciTest {
+public class FibonacciTestSemConstrutor {
 
     @Parameterized.Parameters(name = "{index}: fib({0}) = {1}")
     public static Collection<Object[]> data() {
@@ -17,14 +18,12 @@ public class FibonacciTest {
         });
     }
 
-    private int fInput;
+    @Parameter
+    public int fInput;
 
-    private int fExpected;
+    @Parameter(1)
+    public int fExpected;
 
-    public FibonacciTest(int input, int expected) {
-        this.fInput = input;
-        this.fExpected = expected;
-    }
 
     @Test
     public void test() {
