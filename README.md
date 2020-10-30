@@ -1,13 +1,13 @@
 # testes-parametrizados
 Repositório de aprendizado de testes automatizados parametrizados
 
-COD_ATIVIDADE: GQS_Republica_003
+**COD_ATIVIDADE**: GQS_Republica_003
 
 
-Discente: Thiago Ribeiro Valentim Martins
+**Discente**: Thiago Ribeiro Valentim Martins
 
 
-Matrícula: 2015207462
+**Matrícula**: 2015207462
 
 Os Casos de teste foram aplicados na classe **CurrencyFormatter**, que transforma valores *double* em *String* representando a moeda brasileira (Real)
 
